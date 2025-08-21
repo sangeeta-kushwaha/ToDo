@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(45, 45, 45);
+  color: white;
+  text-transform: capitalize;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 50%;
+  margin: auto;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-container header {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: rgb(45, 45, 45);
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  width: 100%;
+  gap: 1rem;
+}
+.inputContainer #inputField {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0px 15px;
+  border: none;
+  outline: none;
+}
+.inputContainer .addTaskBtn {
+  border-radius: 5px;
+  padding: 0px 25px;
+  border: none;
+}
+
+.inputContainer .addTaskBtn:hover {
+  background-color: rgba(172, 170, 170, 0.555);
+  color: #fff;
+}
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.todoContainer .todo {
+  background-color: lightseagreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+.todoContainer button {
+  width: fit-content;
+  padding: 5px 10px;
+}
+
+.todoContainer .todo .saveBtn {
+  display: none;
+}
+
+.todoContainer .todo #editInput {
+  display: none;
+}
